@@ -4,11 +4,9 @@
 	<property name="plugin" value="novelyst_themes" />
 	
 	<property name="source-path" location="../src" />
-	<property name="test-path" location="../test" />
 	<property name="build-path" location="../build" />
 	<property name="dist-path" location="../dist" />
 	<property name="docs-path" location="../docs" />
-	<property name="i18n-path" location="../i18n" />
 	<property name="application" value="${ant.project.name}" />
 	<property name="release" value="${application}_v${version}" />
 
@@ -27,7 +25,7 @@
 		<replace encoding="utf-8" file="${build-path}/${release}/setup.pyw" token="@release" value="${version}" />
 
 		<copy file="../LICENSE.md" todir="${build-path}/${release}" />	
-		<copy file="../README.md" tofile="${build-path}/${release}/README.md" />
+		<copy file="../README.md" todir="${build-path}/${release}" />
 		
 		<fixcrlf encoding="utf-8" eol="lf" srcdir="${build-path}/${release}" includes="**/*.*" />
 				
@@ -36,10 +34,6 @@
 		
 		<copy file="${docs-path}/template/index.md" overwrite="True" todir="${docs-path}" />
 		<replace encoding="utf-8" file="${docs-path}/index.md" token="0.99.0" value="${version}" />
-	</target>
-
-	<target name="clean" description="clean up">		
-		<delete file="${test-path}/${plugin}.py" />
 	</target>
 
 </project>

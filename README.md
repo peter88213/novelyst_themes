@@ -1,6 +1,6 @@
 # novelyst_themes
 
-A theme changer plugin for novelyst
+A theme changer plugin for [novelyst](https://peter88213.github.io/novelyst)
 
 
 Adds a 'Theme Changer' entry to the 'Tools' menu to open a window with a combobox that lists all available themes. 
@@ -13,6 +13,9 @@ To have a [wider choice](https://ttkthemes.readthedocs.io/en/latest/themes.html)
 
 For more information, see the [project homepage](https://peter88213.github.io/novelyst_themes) with description and download instructions.
 
+## Usage
+
+Start the theme changer from the main menu: **toos > Theme Changer**.
 
 ## License
 
