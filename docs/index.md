@@ -9,7 +9,7 @@ The [novelyst](https://peter88213.github.io/novelyst/) Python program provides a
 - [Python 3.6+](https://www.python.org). 
 - Tk support for Python. This is usually part of the Windows Python installation, but may need to be installed additionally under Linux.
 - [novelyst](https://peter88213.github.io/novelyst/) version 1.0+
-- To have a [wider choice](https://ttkthemes.readthedocs.io/en/latest/themes.html), you may want to install the ttkthemes package.
+- To have a [wider choice](https://ttkthemes.readthedocs.io/en/latest/themes.html), you may want to [install the ttkthemes package](https://ttkthemes.readthedocs.io/en/latest/installation.html).
 
 ## Download and install
 
@@ -20,7 +20,7 @@ The [novelyst](https://peter88213.github.io/novelyst/) Python program provides a
 
 ## Usage
 
-Start the theme changer from the main menu: **toos > Theme Changer**.
+Start the theme changer from the main menu: **Tools > Theme Changer**.
 
 ### Note for Linux users
 
