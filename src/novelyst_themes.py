@@ -17,7 +17,7 @@ For further information see https://github.com/peter88213/novelyst_themes
 License: GNU GPLv3 (https://www.gnu.org/licenses/gpl-3.0.en.html)
 """
 APPLICATION = 'Theme Changer'
-PLUGIN = f'{APPLICATION} plugin v0.1.0'
+PLUGIN = f'{APPLICATION} plugin @release'
 
 import tkinter as tk
 from tkinter import ttk
@@ -38,7 +38,7 @@ class Plugin():
     VERSION = '@release'
     NOVELYST_API = '1.0'
     DESCRIPTION = 'Allows changing between available themes'
-    URL = 'https://peter88213.github.io/novelyst'
+    URL = 'https://peter88213.github.io/novelyst_themes'
 
     def install(self, ui):
         """Add a submenu to the 'Tools' menu.
@@ -108,7 +108,7 @@ class SettingsWindow(tk.Toplevel):
     def __init__(self, ui, windowGeometry, **kw):
         self._ui = ui
         super().__init__(**kw)
-        self.title('Theme settings')
+        self.title(APPLICATION)
         self.geometry(windowGeometry)
         self.grab_set()
         self.focus()
