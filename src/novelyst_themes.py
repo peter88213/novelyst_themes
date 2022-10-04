@@ -13,7 +13,7 @@ pip install ttkthemes
 Compatibility: novelyst v1.0 API 
 Requires Python 3.6+
 Copyright (c) 2022 Peter Triesberger
-For further information see https://github.com/peter88213/novelyst
+For further information see https://github.com/peter88213/novelyst_themes
 License: GNU GPLv3 (https://www.gnu.org/licenses/gpl-3.0.en.html)
 """
 APPLICATION = 'Theme Changer'
@@ -118,6 +118,7 @@ class SettingsWindow(tk.Toplevel):
         # Combobox for theme setting.
         theme = self._ui.guiStyle.theme_use()
         themeList = self._ui.guiStyle.theme_names()
+        themeList.sort()
         self._theme = tk.StringVar(value=theme)
         self._theme.trace('w', self._change_theme)
         themeCombobox = LabelCombo(window,
