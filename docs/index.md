@@ -1,4 +1,6 @@
-The [novelyst](https://peter88213.github.io/novelyst/) Python program provides a tree view with parts, chapters and scenes for [yWriter](http://spacejock.com/yWriter7.html) projects. 
+# novelyst_themes
+
+The [novelyst](https://peter88213.github.io/novelyst/) Python program helps authors organize novels.  
 
 *novelyst_themes* is a plugin providing a theme changer dialog. 
 
@@ -8,7 +10,7 @@ The [novelyst](https://peter88213.github.io/novelyst/) Python program provides a
 
 - [Python 3.6+](https://www.python.org). 
 - Tk support for Python. This is usually part of the Windows Python installation, but may need to be installed additionally under Linux.
-- [novelyst](https://peter88213.github.io/novelyst/) version 1.0+
+- [novelyst](https://peter88213.github.io/novelyst/) version 1.0.0+
 - To have a [wider choice](https://ttkthemes.readthedocs.io/en/latest/themes.html), you may want to [install the ttkthemes package](https://ttkthemes.readthedocs.io/en/latest/installation.html).
 
 ## Download and install
@@ -34,4 +36,4 @@ Please make sure that your Python3 installation has the *tkinter* module. On Ubu
 
 This is Open Source software, and the *novelyst_themes* plugin is licenced under GPLv3. See the
 [GNU General Public License website](https://www.gnu.org/licenses/gpl-3.0.en.html) for more
-details, or consult the [LICENSE](https://github.com/peter88213/novelyst_themes/blob/main/LICENSE.md) file.
+details, or consult the [LICENSE](https://github.com/peter88213/novelyst_themes/blob/main/LICENSE) file.

@@ -24,7 +24,7 @@
 		<copy file="${source-path}/setup.pyw" todir="${build-path}/${release}" />		
 		<replace encoding="utf-8" file="${build-path}/${release}/setup.pyw" token="@release" value="${version}" />
 
-		<copy file="../LICENSE.md" todir="${build-path}/${release}" />	
+		<copy file="../LICENSE" todir="${build-path}/${release}" />	
 		<copy file="../README.md" todir="${build-path}/${release}" />
 		
 		<fixcrlf encoding="utf-8" eol="lf" srcdir="${build-path}/${release}" includes="**/*.*" />
