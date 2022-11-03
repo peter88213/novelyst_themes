@@ -105,11 +105,11 @@ class LabelCombo(ttk.Frame):
 
 class SettingsWindow(tk.Toplevel):
 
-    def __init__(self, ui, windowGeometry, **kw):
+    def __init__(self, ui, size, **kw):
         self._ui = ui
         super().__init__(**kw)
         self.title(APPLICATION)
-        self.geometry(windowGeometry)
+        self.geometry(size)
         self.grab_set()
         self.focus()
         window = ttk.Frame(self)
