@@ -35,7 +35,7 @@ class Plugin():
         enable_menu() -- enable menu entries when a project is open.    
     """
     VERSION = '@release'
-    NOVELYST_API = '3.0'
+    NOVELYST_API = '4.0'
     DESCRIPTION = 'Allows changing between available themes'
     URL = 'https://peter88213.github.io/novelyst_themes'
 

@@ -8,7 +8,7 @@ The [novelyst](https://peter88213.github.io/novelyst/) Python program helps auth
 
 ## Requirements
 
-- [novelyst](https://peter88213.github.io/novelyst/) version 3.0.0+
+- [novelyst](https://peter88213.github.io/novelyst/) version 4.0+
 - To have a [wider choice](https://ttkthemes.readthedocs.io/en/latest/themes.html), you may want to [install the ttkthemes package](https://ttkthemes.readthedocs.io/en/latest/installation.html).
 
 ## Download and install

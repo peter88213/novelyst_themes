@@ -8,14 +8,14 @@ The [novelyst](https://peter88213.github.io/novelyst/) Python program helps auth
 
 ## Requirements
 
-- [novelyst](https://peter88213.github.io/novelyst/) version 3.0.0+
+- [novelyst](https://peter88213.github.io/novelyst/) version 4.0+
 - To have a [wider choice](https://ttkthemes.readthedocs.io/en/latest/themes.html), you may want to [install the ttkthemes package](https://ttkthemes.readthedocs.io/en/latest/installation.html).
 
 ## Download and install
 
-[Download the latest release (version 3.0.0)](https://github.com/peter88213/novelyst_themes/raw/main/dist/novelyst_themes_v3.0.0.zip)
+[Download the latest release (version 4.0.0)](https://github.com/peter88213/novelyst_themes/raw/main/dist/novelyst_themes_v4.0.0.zip)
 
-- Unzip the downloaded zipfile "novelyst_themes_v3.0.0.zip" into a new folder.
+- Unzip the downloaded zipfile "novelyst_themes_v4.0.0.zip" into a new folder.
 - Move into this new folder and launch **setup.pyw**. This installs the plugin for the local user.
 
 ## Usage
