@@ -4,6 +4,12 @@
 
 ## Changelog
 
+### v4.0.1
+
+- Make the setup script run with Python 3.11 under Windows.
+
+Compatibility: novelyst v4.0 API
+
 ### v4.0.0
 
 - API update. 
