@@ -51,11 +51,10 @@ class Plugin():
         windowGeometry = f'+{int(x)+offset}+{int(y)+offset}'
         if extraThemes:
             self._ui.guiStyle = ThemedStyle(self._ui.root)
-        themeList = list(self._ui.guiStyle.theme_names())
         if not self._ui.kwargs.get('gui_theme', ''):
             self._ui.kwargs['gui_theme'] = self._ui.guiStyle.theme_use()
 
-        if not self._ui.kwargs['gui_theme'] in themeList:
+        if not self._ui.kwargs['gui_theme'] in self._ui.guiStyle.theme_names():
             self._ui.kwargs['gui_theme'] = self._ui.guiStyle.theme_use()
         if extraThemes:
             self._ui.guiStyle.set_theme(self._ui.kwargs['gui_theme'])
@@ -116,7 +115,8 @@ class SettingsWindow(tk.Toplevel):
 
         # Combobox for theme setting.
         theme = self._ui.guiStyle.theme_use()
-        themeList = self._ui.guiStyle.theme_names()
+        # themeList = list(self._ui.guiStyle.theme_names())
+        themeList = list(self._ui.guiStyle.theme_names())
         themeList.sort()
         self._theme = tk.StringVar(value=theme)
         self._theme.trace('w', self._change_theme)
