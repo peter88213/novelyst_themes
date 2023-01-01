@@ -115,7 +115,6 @@ class SettingsWindow(tk.Toplevel):
 
         # Combobox for theme setting.
         theme = self._ui.guiStyle.theme_use()
-        # themeList = list(self._ui.guiStyle.theme_names())
         themeList = list(self._ui.guiStyle.theme_names())
         themeList.sort()
         self._theme = tk.StringVar(value=theme)
