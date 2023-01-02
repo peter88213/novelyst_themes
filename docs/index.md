@@ -6,6 +6,13 @@ The [novelyst](https://peter88213.github.io/novelyst/) Python program helps auth
 
 ![Screenshot](Screenshots/screen01.png)
 
+## Side note
+
+Actually, the plugin is more intended for Linux, where the default theme looks pretty stale, and there are plenty of desktops, each with a different look.
+
+On Windows, *novelyst* uses a lot of native widgets by default, you can hardly do better with custom themes.
+However, if you want a dark theme, another plugin is good for that, which I included with the novelyst add-ons (*novelyst_awdark.py*). That also changes the colors of the tree entries. However, it must not be installed at the same time as this *novelyst_themes* plugin.
+
 ## Requirements
 
 - [novelyst](https://peter88213.github.io/novelyst/) version 4.0+
@@ -21,10 +28,6 @@ The [novelyst](https://peter88213.github.io/novelyst/) Python program helps auth
 ## Usage
 
 Start the theme changer from the main menu: **Tools > Theme Changer**.
-
-### Note for Linux users
-
-Please make sure that your Python3 installation has the *tkinter* module. On Ubuntu, for example, it is not available out of the box and must be installed via a separate package. 
 
 ------------------------------------------------------------------
 
