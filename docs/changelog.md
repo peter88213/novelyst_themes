@@ -6,7 +6,8 @@
 
 ### v4.0.2
 
-Fix a bug where the available themes are not displayed, if ttkthemes.ThemedStyle is not installed.
+Fix a bug where the available themes are not displayed, if the *ttkthemes* package is not installed.
+
 This is, because ttkthemes.ThemedStyle.theme_names() returns a list, whereas ttk.Style.theme_names() returns a tuple, which has no sort() method.
 
 Compatibility: novelyst v4.0 API
