@@ -30,7 +30,7 @@
 		<fixcrlf encoding="utf-8" eol="lf" srcdir="${build-path}/${release}" includes="**/*.*" />
 				
 		
-		<zip destfile="${dist-path}/${release}.zip" basedir="${build-path}/${release}" />
+		<zip destfile="${dist-path}/${release}.zip" basedir="${build-path}" />
 		
 		<copy file="${docs-path}/template/index.md" overwrite="True" todir="${docs-path}" />
 		<replace encoding="utf-8" file="${docs-path}/index.md" token="0.99.0" value="${version}" />
