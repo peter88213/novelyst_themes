@@ -22,16 +22,16 @@ However, if you want a dark theme, another plugin is good for that, which I incl
 
 [Download the latest release (version 4.0.2)](https://github.com/peter88213/novelyst_themes/raw/main/dist/novelyst_themes_v4.0.2.zip)
 
-- Unzip the downloaded zipfile "novelyst_themes_v4.0.2.zip" into a new folder.
+- Extract the "novelyst_themes_v4.0.2" folder from the downloaded zipfile "novelyst_themes_v4.0.2.zip".
 - Move into this new folder and launch **setup.pyw**. This installs the plugin for the local user.
+
+---
+
+[Changelog](changelog)
 
 ## Usage
 
 Start the theme changer from the main menu: **Tools > Theme Changer**.
-
-------------------------------------------------------------------
-
-[Changelog](changelog)
 
 ## License
 
