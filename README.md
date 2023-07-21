@@ -9,6 +9,10 @@ The selected theme will be persistently applied.
 
 For more information, see the [project homepage](https://peter88213.github.io/novelyst_themes) with description and download instructions.
 
+## Feedback? Ideas? Feature requests?
+
+You can go to the [novelyst "discussions" forum](https://github.com/peter88213/novelyst/discussions) and start a thread.
+
 ## Usage
 
 Start the theme changer from the main menu: **Tools > Theme Changer**.
