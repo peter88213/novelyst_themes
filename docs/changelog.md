@@ -4,6 +4,12 @@
 
 ## Changelog
 
+### v4.0.3
+
+Refactor: replace tkinter constants with string literals.
+
+Compatibility: novelyst v4.0 API
+
 ### v4.0.2
 
 Fix a bug where the available themes are not displayed, if the *ttkthemes* package is not installed.
