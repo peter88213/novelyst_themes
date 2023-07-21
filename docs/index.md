@@ -20,9 +20,9 @@ However, if you want a dark theme, another plugin is good for that, which I incl
 
 ## Download and install
 
-[Download the latest release (version 4.0.2)](https://github.com/peter88213/novelyst_themes/raw/main/dist/novelyst_themes_v4.0.2.zip)
+[Download the latest release (version 4.0.3)](https://github.com/peter88213/novelyst_themes/raw/main/dist/novelyst_themes_v4.0.3.zip)
 
-- Extract the "novelyst_themes_v4.0.2" folder from the downloaded zipfile "novelyst_themes_v4.0.2.zip".
+- Extract the "novelyst_themes_v4.0.3" folder from the downloaded zipfile "novelyst_themes_v4.0.3.zip".
 - Move into this new folder and launch **setup.pyw**. This installs the plugin for the local user.
 
 ---
