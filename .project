@@ -3,6 +3,7 @@
 	<name>novelyst_themes</name>
 	<comment></comment>
 	<projects>
+		<project>kalliope</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>
