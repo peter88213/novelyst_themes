@@ -11,7 +11,7 @@ For more information, see the [project homepage](https://peter88213.github.io/no
 
 ## Feedback? Ideas? Feature requests?
 
-You can go to the [novelyst "discussions" forum](https://github.com/peter88213/novelyst/discussions) and start a thread.
+You can go to the [novelyst "discussions" forum](https://github.com/peter88213/noveltree/discussions) and start a thread.
 
 ## Usage
 
@@ -21,4 +21,4 @@ Start the theme changer from the main menu: **Tools > Theme Changer**.
 
 This is Open Source software, and the *novelyst_themes* plugin is licensed under GPLv3. See the
 [GNU General Public License website](https://www.gnu.org/licenses/gpl-3.0.en.html) for more
-details, or consult the [LICENSE](https://github.com/peter88213/novelyst_themes/blob/main/LICENSE) file.
+details, or consult the [LICENSE](https://github.com/peter88213/noveltree_themes/blob/main/LICENSE) file.

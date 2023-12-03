@@ -12,7 +12,7 @@ pip install ttkthemes
 
 Requires Python 3.6+
 Copyright (c) 2022 Peter Triesberger
-For further information see https://github.com/peter88213/novelyst_themes
+For further information see https://github.com/peter88213/noveltree_themes
 License: GNU GPLv3 (https://www.gnu.org/licenses/gpl-3.0.en.html)
 
 This program is free software: you can redistribute it and/or modify
