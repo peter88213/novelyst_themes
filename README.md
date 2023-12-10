@@ -1,4 +1,4 @@
-# noveltree_themes
+# nv_themes
 
 A theme changer plugin for [noveltree](https://peter88213.github.io/noveltree)
 
@@ -7,7 +7,7 @@ Adds a 'Theme Changer' entry to the 'Tools' menu to open a window with a combobo
 
 The selected theme will be persistently applied.  
 
-For more information, see the [project homepage](https://peter88213.github.io/noveltree_themes) with description and download instructions.
+For more information, see the [project homepage](https://peter88213.github.io/nv_themes) with description and download instructions.
 
 ## Feedback? Ideas? Feature requests?
 
@@ -19,6 +19,6 @@ Start the theme changer from the main menu: **Tools > Theme Changer**.
 
 ## License
 
-This is Open Source software, and the *noveltree_themes* plugin is licensed under GPLv3. See the
+This is Open Source software, and the *nv_themes* plugin is licensed under GPLv3. See the
 [GNU General Public License website](https://www.gnu.org/licenses/gpl-3.0.en.html) for more
-details, or consult the [LICENSE](https://github.com/peter88213/noveltree_themes/blob/main/LICENSE) file.
+details, or consult the [LICENSE](https://github.com/peter88213/nv_themes/blob/main/LICENSE) file.

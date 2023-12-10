@@ -12,7 +12,7 @@ pip install ttkthemes
 
 Requires Python 3.6+
 Copyright (c) 2022 Peter Triesberger
-For further information see https://github.com/peter88213/noveltree_themes
+For further information see https://github.com/peter88213/nv_themes
 License: GNU GPLv3 (https://www.gnu.org/licenses/gpl-3.0.en.html)
 
 This program is free software: you can redistribute it and/or modify
@@ -45,9 +45,9 @@ class Plugin():
         enable_menu() -- enable menu entries when a project is open.    
     """
     VERSION = '@release'
-    NOVELYST_API = '5.0'
+    NOVELYST_API = '0.1'
     DESCRIPTION = 'Allows changing between available themes'
-    URL = 'https://peter88213.github.io/noveltree_themes'
+    URL = 'https://peter88213.github.io/nv_themes'
 
     def install(self, ui):
         """Add a submenu to the 'Tools' menu.
