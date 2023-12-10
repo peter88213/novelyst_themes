@@ -47,10 +47,10 @@ if __name__ == '__main__':
 
     # Install the plugin.
     homePath = str(Path.home()).replace('\\', '/')
-    novelystDir = f'{homePath}/.novelyst'
-    if os.path.isdir(novelystDir):
+    noveltreeDir = f'{homePath}/.noveltree'
+    if os.path.isdir(noveltreeDir):
         if os.path.isfile(f'./{PLUGIN}'):
-            pluginDir = f'{novelystDir}/plugin'
+            pluginDir = f'{noveltreeDir}/plugin'
             os.makedirs(pluginDir, exist_ok=True)
             copyfile(PLUGIN, f'{pluginDir}/{PLUGIN}')
             output(f'Sucessfully installed "{PLUGIN}" at "{os.path.normpath(pluginDir)}"')

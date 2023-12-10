@@ -1,4 +1,4 @@
-"""A 'Theme Changer' plugin for novelyst.
+"""A 'Theme Changer' plugin for noveltree.
 
 Version @release
 
@@ -47,7 +47,7 @@ class Plugin():
     VERSION = '@release'
     NOVELYST_API = '5.0'
     DESCRIPTION = 'Allows changing between available themes'
-    URL = 'https://peter88213.github.io/novelyst_themes'
+    URL = 'https://peter88213.github.io/noveltree_themes'
 
     def install(self, ui):
         """Add a submenu to the 'Tools' menu.
