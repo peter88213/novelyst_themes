@@ -1,15 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="nv_themes" basedir=".">
-	<property name="version" value="5.0.2" />
+	<property name="version" value="5.1.0" />
 	<property name="plugin" value="nv_themes" />
 	
 	<property name="source-path" location="../src" />
+	<property name="test-path" location="../test" />
 	<property name="build-path" location="../build" />
 	<property name="dist-path" location="../dist" />
 	<property name="docs-path" location="../docs" />
+	<property name="i18n-path" location="../i18n" />
 	<property name="application" value="${ant.project.name}" />
 	<property name="release" value="${application}_v${version}" />
 
+
+	<target name="build" description="inline all library modules">
+		<exec executable="python" failonerror="true">
+		    <arg value="make_pot.py"/>
+		    <arg value="${version}"/>
+		</exec>
+		<exec executable="python" failonerror="true">
+		    <arg value="translate_de.py"/>
+		    <arg value="${version}"/>
+		</exec>
+	</target>
 
 	<target name="dist" description="generate the distribution">		
 		<delete dir="${build-path}" />
@@ -27,8 +40,11 @@
 		<copy file="../LICENSE" todir="${build-path}/${release}" />	
 		<copy file="../README.md" todir="${build-path}/${release}" />
 		
-		<fixcrlf encoding="utf-8" eol="lf" srcdir="${build-path}/${release}" includes="**/*.*" />
-				
+		<fixcrlf encoding="utf-8" eol="lf" srcdir="${build-path}/${release}" includes="**/*.*" />				
+		
+		<copy todir="${build-path}/${release}/locale"> 
+			<fileset dir="${i18n-path}/locale" />
+		</copy>
 		
 		<zip destfile="${dist-path}/${release}.zip" basedir="${build-path}" />
 		

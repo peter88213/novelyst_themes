@@ -1,0 +1,27 @@
+# nv_themes Dictionary (English-German)
+# Copyright (C) 2022 Peter Triesberger
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 5.1.0\n"
+"POT-Creation-Date: 2023-12-17 14:32:39\n"
+"PO-Revision-Date: 2023-12-17 14:32:39\n"
+"Last-Translator: Peter Triesberger\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+
+msgid "Change theme"
+msgstr "Designtheme wechseln"
+
+msgid "Exit"
+msgstr "Beenden"
+
+msgid "GUI Theme"
+msgstr "GUI-Theme"
+
+msgid "Theme Changer"
+msgstr "Theme-Wechsler"
+

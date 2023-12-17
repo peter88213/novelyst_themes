@@ -37,7 +37,7 @@ if __name__ == '__main__':
     os.chdir(scriptDir)
 
     # Open a tk window.
-    root.geometry("600x150")
+    root.geometry("600x200")
     root.title(f'Install {PLUGIN}{VERSION}')
     header = Label(root, text='')
     header.pack(padx=5, pady=5)
@@ -56,6 +56,10 @@ if __name__ == '__main__':
             output(f'Sucessfully installed "{PLUGIN}" at "{os.path.normpath(pluginDir)}"')
         else:
             output(f'ERROR: file "{PLUGIN}" not found.')
+
+        # Install the localization files.
+        copytree('locale', f'{noveltreeDir}/locale', dirs_exist_ok=True)
+        output(f'Copying "locale"')
 
     # Check, whether the ttkthemes package is available.
     try:

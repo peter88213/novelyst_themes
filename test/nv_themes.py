@@ -37,12 +37,10 @@ try:
 except ModuleNotFoundError:
     extraThemes = False
 
-# Initialize localization.
 LOCALE_PATH = f'{os.path.dirname(sys.argv[0])}/locale/'
 try:
     CURRENT_LANGUAGE = locale.getlocale()[0][:2]
 except:
-    # Fallback for old Windows versions.
     CURRENT_LANGUAGE = locale.getdefaultlocale()[0][:2]
 try:
     t = gettext.translation('nv_themes', LOCALE_PATH, languages=[CURRENT_LANGUAGE])
@@ -54,7 +52,6 @@ except:
 
 
 class Plugin():
-    """A 'Theme Changer' plugin class."""
     VERSION = '@release'
     NOVELYST_API = '0.6'
     DESCRIPTION = 'Allows changing between available themes'
@@ -83,7 +80,6 @@ class Plugin():
         else:
             self._ui.guiStyle.theme_use(self._ui.kwargs['gui_theme'])
 
-        # Create a submenu
         self._ui.viewMenu.add_command(label=_('Change theme'), command=lambda: SettingsWindow(self._ui, windowGeometry))
 
 
@@ -103,11 +99,9 @@ class LabelCombo(ttk.Frame):
         self._combo.pack(side='left', fill='x', expand=True)
 
     def current(self):
-        """Return the combobox selection."""
         return self._combo.current()
 
     def configure(self, text=None, values=None):
-        """Configure internal widgets."""
         if text is not None:
             self._label['text'] = text
         if values is not None:
@@ -126,7 +120,6 @@ class SettingsWindow(tk.Toplevel):
         window = ttk.Frame(self)
         window.pack(fill='both')
 
-        # Combobox for theme setting.
         theme = self._ui.guiStyle.theme_use()
         themeList = list(self._ui.guiStyle.theme_names())
         themeList.sort()
@@ -141,7 +134,6 @@ class SettingsWindow(tk.Toplevel):
             )
         themeCombobox.pack(padx=5, pady=5)
 
-        # "Exit" button.
         ttk.Button(window, text=_('Exit'), command=self.destroy).pack(padx=5, pady=5)
 
     def _change_theme(self, *args, **kwargs):
