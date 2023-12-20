@@ -60,7 +60,7 @@ class Plugin():
     DESCRIPTION = 'Allows changing between available themes'
     URL = 'https://peter88213.github.io/nv_themes'
 
-    def install(self, controller, ui):
+    def install(self, controller, ui, prefs):
         """Add a submenu to the 'Tools' menu.
         
         Positional arguments:
@@ -68,23 +68,27 @@ class Plugin():
             ui -- reference to the main view instance of the application.
         """
         self._ui = ui
+        self._prefs = prefs
         __, x, y = self._ui.root.geometry().split('+')
         offset = 300
         windowGeometry = f'+{int(x)+offset}+{int(y)+offset}'
         if extraThemes:
             self._ui.guiStyle = ThemedStyle(self._ui.root)
-        if not self._ui.kwargs.get('gui_theme', ''):
-            self._ui.kwargs['gui_theme'] = self._ui.guiStyle.theme_use()
+        if not self._prefs.get('gui_theme', ''):
+            self._prefs['gui_theme'] = self._ui.guiStyle.theme_use()
 
-        if not self._ui.kwargs['gui_theme'] in self._ui.guiStyle.theme_names():
-            self._ui.kwargs['gui_theme'] = self._ui.guiStyle.theme_use()
+        if not self._prefs['gui_theme'] in self._ui.guiStyle.theme_names():
+            self._prefs['gui_theme'] = self._ui.guiStyle.theme_use()
         if extraThemes:
-            self._ui.guiStyle.set_theme(self._ui.kwargs['gui_theme'])
+            self._ui.guiStyle.set_theme(self._prefs['gui_theme'])
         else:
-            self._ui.guiStyle.theme_use(self._ui.kwargs['gui_theme'])
+            self._ui.guiStyle.theme_use(self._prefs['gui_theme'])
 
         # Create a submenu
-        self._ui.viewMenu.add_command(label=_('Change theme'), command=lambda: SettingsWindow(self._ui, windowGeometry))
+        self._ui.viewMenu.add_command(
+            label=_('Change theme'),
+            command=lambda: SettingsWindow(self._ui, self._prefs, windowGeometry)
+            )
 
 
 class LabelCombo(ttk.Frame):
@@ -116,8 +120,9 @@ class LabelCombo(ttk.Frame):
 
 class SettingsWindow(tk.Toplevel):
 
-    def __init__(self, ui, size, **kw):
+    def __init__(self, ui, prefs, size, **kw):
         self._ui = ui
+        self._prefs = prefs
         super().__init__(**kw)
         self.title(_('Theme Changer'))
         self.geometry(size)
@@ -146,9 +151,9 @@ class SettingsWindow(tk.Toplevel):
 
     def _change_theme(self, *args, **kwargs):
         theme = self._theme.get()
-        self._ui.kwargs['gui_theme'] = theme
+        self._prefs['gui_theme'] = theme
         if extraThemes:
-            self._ui.guiStyle.set_theme(self._ui.kwargs['gui_theme'])
+            self._ui.guiStyle.set_theme(self._prefs['gui_theme'])
         else:
-            self._ui.guiStyle.theme_use(self._ui.kwargs['gui_theme'])
+            self._ui.guiStyle.theme_use(self._prefs['gui_theme'])
 
