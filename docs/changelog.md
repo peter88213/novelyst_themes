@@ -4,6 +4,12 @@
 
 ## Changelog
 
+### v4.0.4
+
+Fix a bug where the menu entry is disabled when no project is open.
+
+Compatibility: novelyst v4.0 API
+
 ### v4.0.3
 
 Refactor: replace tkinter constants with string literals.

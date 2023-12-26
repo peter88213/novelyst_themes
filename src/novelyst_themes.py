@@ -73,15 +73,6 @@ class Plugin():
 
         # Create a submenu
         self._ui.toolsMenu.add_command(label=APPLICATION, command=lambda: SettingsWindow(self._ui, windowGeometry))
-        self._ui.toolsMenu.entryconfig(APPLICATION, state='disabled')
-
-    def disable_menu(self):
-        """Disable menu entries when no project is open."""
-        self._ui.toolsMenu.entryconfig(APPLICATION, state='disabled')
-
-    def enable_menu(self):
-        """Enable menu entries when a project is open."""
-        self._ui.toolsMenu.entryconfig(APPLICATION, state='normal')
 
 
 class LabelCombo(ttk.Frame):
