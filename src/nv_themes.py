@@ -120,8 +120,8 @@ class LabelCombo(ttk.Frame):
 
 class SettingsWindow(tk.Toplevel):
 
-    def __init__(self, ui, prefs, size, **kw):
-        self._ui = ui
+    def __init__(self, view, prefs, size, **kw):
+        self._ui = view
         self._prefs = prefs
         super().__init__(**kw)
         self.title(_('Theme Changer'))
