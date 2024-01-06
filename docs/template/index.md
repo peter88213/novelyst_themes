@@ -20,7 +20,7 @@ However, if you want a dark theme, another plugin is good for that, which I incl
 
 ## Download and install
 
-[Download the latest release (version 0.99.0)](https://github.com/peter88213/nv_themes/raw/main/dist/nv_themes_v0.99.0.zip)
+[Download the latest release (version 0.99.0)](https://github.com/peter88213/noveltree_themes/raw/main/dist/nv_themes_v0.99.0.zip)
 
 - Extract the "nv_themes_v0.99.0" folder from the downloaded zipfile "nv_themes_v0.99.0.zip".
 - Move into this new folder and launch **setup.pyw**. This installs the plugin for the local user.
@@ -37,4 +37,4 @@ Start the theme changer from the main menu: **Tools > Theme Changer**.
 
 This is Open Source software, and the *nv_themes* plugin is licensed under GPLv3. See the
 [GNU General Public License website](https://www.gnu.org/licenses/gpl-3.0.en.html) for more
-details, or consult the [LICENSE](https://github.com/peter88213/nv_themes/blob/main/LICENSE) file.
+details, or consult the [LICENSE](https://github.com/peter88213/noveltree_themes/blob/main/LICENSE) file.
