@@ -3,7 +3,7 @@
 A theme changer plugin for [noveltree](https://peter88213.github.io/noveltree)
 
 
-Adds a 'Theme Changer' entry to the 'Tools' menu to open a window with a combobox that lists all available themes. 
+Adds a 'Theme Changer' entry to the "View" menu to open a window with a combobox that lists all available themes. 
 
 The selected theme will be persistently applied.  
 
@@ -15,7 +15,7 @@ You can go to the [noveltree "discussions" forum](https://github.com/peter88213/
 
 ## Usage
 
-Start the theme changer from the main menu: **Tools > Theme Changer**.
+Start the theme changer from the main menu: **View > Theme Changer**.
 
 ## License
 
